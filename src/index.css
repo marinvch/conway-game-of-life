@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.stats {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.player-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.player-controls button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.player-controls button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.player-controls button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.canvas {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #333;
+  color: white;
+  background-color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: background-color 0.2s;
+  user-select: none;
+}
+
+.col:hover {
+  border-color: #007bff;
+}
+
+.isAlive {
+  background-color: black;
+  color: black;
+  font-weight: bold;
+}
